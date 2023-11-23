@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CalculatorTest {
 
 
+    // Здесь образцы синтаксиса для будущих семинаров
     private Calculator calculator;
 
     @BeforeAll

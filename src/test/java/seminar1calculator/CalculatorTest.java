@@ -1,13 +1,26 @@
-package calculator;
+package seminar1calculator;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
+    // Тесты для домашнего задания
+
+    @Test
+    void calculateDiscountCheckCalculation() {
+        assertEquals(85, calculator.calculateDiscount(100, 0.15));
+    }
+
+    @ParameterizedTest
+    @CsvSource({"100, 1", "100, -0.7", "100, 1.5"})
+    void calculateDiscountCheckException(int a, double b) {
+        assertThrows(ArithmeticException.class, () -> calculator.calculateDiscount(a, b));
+    }
 
     // Здесь образцы синтаксиса для будущих семинаров
     private Calculator calculator;
@@ -103,4 +116,5 @@ class CalculatorTest {
         int[] actual = {1, 2, 3};
         assertArrayEquals(expected, actual);
     }
+
 }

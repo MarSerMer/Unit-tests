@@ -38,6 +38,7 @@ public class MathUtilsTest {
     void divide() {
 //        mathUtils = null;
 //        assertNotNull(mathUtils);
+        assertTrue(15 != mathUtils.divide(200, 10));
 
     }
 }

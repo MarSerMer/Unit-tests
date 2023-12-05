@@ -1,4 +1,4 @@
-package seminar4.task2;
+package seminar5.task2;
 
 public class UserService {
     private final UserRepository userRepository;

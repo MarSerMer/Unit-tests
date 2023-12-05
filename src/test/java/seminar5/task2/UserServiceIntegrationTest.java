@@ -1,4 +1,4 @@
-package seminar4.task2;
+package seminar5.task2;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

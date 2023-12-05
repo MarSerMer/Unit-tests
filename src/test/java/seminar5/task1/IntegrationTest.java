@@ -1,9 +1,8 @@
-package seminar4.task1;
+package seminar5.task1;
 
 import org.junit.jupiter.api.Test;
 
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
